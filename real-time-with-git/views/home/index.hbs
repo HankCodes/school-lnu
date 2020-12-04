@@ -1,0 +1,36 @@
+<div class="indexHeaderWrapper bg-background">
+         
+    <div id="uspWrapper">
+        {{>flash}}
+        <div class="headerContainer">
+            <h1 class="indexHeader text-hardGreen text-slim">DEVELOP</h1>
+            <h1 class="indexHeader text-hardGreen text-slim">YOURSELF</h1>
+        </div>    
+        <p class="indexContent text-offWhite text-fat">
+                    Collaborate with friends. <br/>
+                    Fast access to new issues. <br/>
+                    The easiest way to <br/>
+                    manage your reposoitory. <br/>
+        </p>
+        <button id="showCreateAccount" class="actionBtn text-offWhite text-fat bg-hardGreen">GET FREE ACCOUNT</button>
+    </div>
+
+    <div id="formWrapper">
+        <div class="createAccountHeader text-offWhite">
+            <h1 class="text-fat">Create your account</h1>
+        </div>
+        <form action="/login/createAccount" method="POST">
+            <label for="username">Choose username</label>
+            <input type="text" id="username" name="username" />
+            <label for="name">Your name</label>
+            <input type="text" id="name" name="name" />
+            <label for="surname">Your lastname</label>
+            <input type="text" id="surname" name="surname" />
+            <label for="passphrase">Choose a passphrase</label>
+            <input type="password" id="passphrase" name="passphrase" class="inputField"/>
+            <label for="passphraseCheck">Confirm passphrase</label>
+            <input type="password" id="passphraseCheck" name="passphraseCheck" class="inputField" />
+            <input type="submit" id="createAccountBtn" class="actionBtn bg-softGreen text-offWhite text-fat" value="Create">
+        </form>
+      </div>  
+</div>

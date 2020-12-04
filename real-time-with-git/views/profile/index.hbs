@@ -1,0 +1,17 @@
+    <div class="masterWrapper">
+            {{>sidebar}}
+        <div class="cardWrapperMain bg-background">
+            {{#each viewData.repos}}
+            <div class="repoCardWrapper bg-segment">
+                <div class="content text-offWhite">
+                    <h3 class="header text-fat">{{name}}</h3>
+                    <p class="org text-slim">{{org}}</p>
+                    <p class="text-slim">Open issues: {{open_issues_count}}</p>
+                </div>
+                <div class="btnWrapper">
+                    <a class="btn bg-focus text-slim text-offWhite" href="/profile/{{id}}/issues">View repository</a>
+                </div>
+            </div>
+            {{/each}}
+        </div>
+    </div>

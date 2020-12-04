@@ -1,0 +1,18 @@
+ 
+<main class="loginWrapper bg-background">
+    <section class="loginSection bg-focus">
+        <div  class="loginHeader">
+            <h1 class="text-fat text-offWhite">sign in with you account<br/> or</h1>
+            <a href="/login/gitlab" id="gitLabSignin" class="text-fat text-offWhite">SIGN IN WITH GITLAB</a>
+        </div>
+       <form action="/login/attempt" method="post">
+       {{>flash}}
+           <label for="username" class="text-offWhite text-slim">Username</label>
+           <input type="text" id="username" placeholder="Username" name="username"/>
+            <label for="passphrase" class="text-offWhite text-slim">Passphrase</label>
+           <input type="password" id="passphrase" placeholder="passphrase" name="passphrase" class="inputField"/>
+           <input type="submit" value="Log in" class="actionBtn bg-focus text-offWhite text-fat">
+       </form>
+        
+    </section>
+</main>

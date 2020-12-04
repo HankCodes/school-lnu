@@ -1,0 +1,28 @@
+    <div class="masterWrapper">
+            {{>sidebar}}
+        <div class="issuesWrapperMain bg-background">
+            <div class="issuesWrapper">
+                <div id="newIssuesContainer"></div>
+                {{#if viewData}}
+            {{#each viewData}}
+            <div class="issueCardWrapper bg-segment">
+                <div class="content text-offWhite">
+                    <h3 class="header text-fat">{{title}}</h3>
+                    <p class="text-slim">Created by: {{author.username}}</p>
+                    <p class="text-slim">Last updated: {{updated_at}}</p>
+                    <p class="text-slim">State: {{state}}</p>
+                    {{!-- <p class="newIssues text-slim text-softGreen">No new Issues</p> --}}
+                </div>
+                <div class="btnWrapper">
+                    <a class="btn bg-focus text-slim text-offWhite" href="/profile/{{project_id}}/issues/{{iid}}/comments">View issues</a>
+                </div>
+            </div>
+            {{/each}}
+            {{else}}
+            <div class="noIssues">Thers is no issues for this repository</div>
+            {{/if}}
+            </div>
+            <div class="issueView">
+            </div>
+        </div>
+    </div>

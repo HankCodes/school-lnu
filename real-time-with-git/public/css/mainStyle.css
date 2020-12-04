@@ -1,0 +1,546 @@
+/* global style */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.bg-absoluteBlack {
+    background-color: #0000;
+}
+
+.bg-background {
+    background-color: #111111;
+}
+
+.bg-segment {
+    background-color: #1E1E1E;
+}
+
+.bg-focus {
+    background-color: #2E2E2E;
+}
+
+.bg-highlight {
+    background-color: #545454;
+}
+
+.bg-softGreen {
+    background-color: #377C0A;
+}
+
+.bg-hardGreen {
+    background-color: #48B700;
+}
+
+.text-offWhite {
+    color: #E1E1E1;
+}
+.text-softGreen {
+    color: #377C0A;
+}
+
+.text-hardGreen {
+    color: #76B900;
+}
+
+.text-darkGrey {
+    color: rgb(102, 102, 102);
+}
+
+.text-fat {
+    font-family: 'Exo 2', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.text-italic {
+    font-style: italic;
+}
+.text-slim {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+.greenBottomLine {
+    border-bottom: 2px solid green;
+}
+
+.btn {
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    bottom: 0px;
+    border: none;
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+}
+
+.btn:hover {
+    background-color: #545454;
+}
+
+.actionBtn {
+    display: inline-block;
+    vertical-align: middle;
+    border: none;
+    width: 100px;
+    height: 30px;
+    border-radius: 7px;
+    font-size: 18px;
+}
+.actionBtn:hover {
+    background-color: rgb(65, 158, 2);
+}
+
+a {
+    display:table-cell;
+    vertical-align: middle; 
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+.inlineBlock {
+    display: inline-block;
+}
+/* end of global style */
+
+/* flash messages */
+.flash {
+    max-width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.warning {
+    background-color: rgb(251, 133, 133);
+    color: rgb(83, 14, 14)
+}
+
+.success {
+    background-color: rgb(135, 216, 135);
+    color: rgb(16, 82, 16);
+}
+
+/* end of flash messages */
+
+/* header */
+.navWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    padding-left: 30px;
+    padding-right: 50px;
+    /* width: 100%; */
+}
+
+.navWrapper > ul {
+    display: flex;
+    height: inherit;
+    width: 50%;
+}
+
+.navWrapper > ul > li {
+    height: inherit;
+}
+.navWrapper .aTag {
+    cursor: default;
+    font-size: 32px;
+    height: inherit;
+    padding: 0 20px;
+}
+
+.loginBtn {
+    text-align: center;
+}
+.navWrapper .aTag:hover, .aTag:hover {
+    background-color: #377C0A;
+}
+/* end of header */
+
+/* Content */
+.masterWrapper {
+    display: flex;
+    min-height: 100vh;
+}
+/* end of content */
+
+
+/* profile */
+.profileWrapper {
+    width: 300px;
+    height: inherit;
+}
+
+.listWrapper {
+    margin-top: 20px;
+    margin-left: 40px;    
+}
+
+.listWrapper > h2 {
+    font-family: 'Chakra Petch', sans-serif;
+    letter-spacing: 3px;
+}
+
+.listWrapper .aTag {
+    cursor: default;
+    display: block;
+    font-size: 28px;
+    padding: 5px;
+}
+
+/* end of profile*/
+/* repo cards */
+.cardWrapperMain {
+    /* display: flex; */
+    /* justify-content: center; */
+    /* flex-wrap: wrap; */
+    overflow: auto;
+    padding: 10px;
+    width: 100%;
+}
+.repoCardWrapper, .issueCardWrapper {
+    display: inline-block;
+    position: relative;
+    margin: 10px;
+    width: 300px;
+    /* height: 100%; */
+}
+
+.repoCardWrapper {
+    height: 250px;
+}
+.content {
+    margin: 15px;
+}
+.org, .newIssues {
+    margin-top: 5px;
+    font-style: italic;
+}
+/* end of repo cards */
+
+/* Issues cards */
+.issuesWrapperMain {
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.issuesWrapper {
+    width: 300px;
+    /* height: 100vh; */
+    border-right: 3px solid rgb(92, 92, 92);
+}
+
+.noIssues {
+    color: rgb(92, 92, 92);
+    margin-top: 100px;
+    text-align: center;
+    font-style: italic;
+}
+
+.issueCardWrapper {
+    width: 95%;
+    height: 200px;
+}
+
+.issueView {
+    margin: 0 auto;
+    /* width: 700px; */
+}
+/* end of issue cards */
+
+/* discussions */
+.discussionHeader {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+    padding: 0 20px 0 20px;
+    height: 50px;
+    width: 600px;
+}
+.issueName {
+    font-size: 28px;
+}
+
+.issueDescription {
+    padding: 20px;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+/* .issueVotes > p {
+    margin: 0 20px; 
+} */
+
+.discussionCardWrapper {
+    box-sizing: border-box;
+    margin: 20px auto;
+    width: 600px;
+}
+
+.discussionCardHeader {
+    padding: 5px 10px;
+}
+
+.discussionCardHeader h3 {
+    font-size: 18px;
+}
+
+.discussionCardContent {
+    padding: 10px;
+    font-size: 20px;
+}
+/* comment */
+.commentWrapper {
+    margin: 0 auto;
+    width: 600px;
+    height: 200px;
+}
+
+.deleteReplyWrapper {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 16px;
+    color: grey;
+}
+.commentReply, .commentDelete {
+    margin: 0 10px;
+}
+
+#commentIssue {
+    box-sizing: border-box;
+    resize: none;
+    margin: 10px 27px;
+    padding: 10px;
+    width: 90%;
+    height: 60%;
+    border: none;
+    border-bottom: 1px solid rgb(105, 105, 105);
+}
+#commentIssue:focus::placeholder {
+    color: transparent;
+  }
+
+#sendComment {
+    float: right;
+    margin: 0 30px;
+}
+
+.encapsulateDiscussion {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 5px 0;
+}
+
+/* popup style */
+
+.newPopupWrapper {
+    display: block;
+    margin-bottom: 10px;
+    width: 400px;
+    height: 110px;
+}
+
+.newPopupHeader {
+    padding-left: 10px;
+    height: 40px;
+}
+
+.newPopupText {
+    display: inline-block;
+    width: 90%;
+}
+
+.newPopupTitle {
+    display: inline-block;
+    margin: 5px 10px;
+    font-size: 20px;
+}
+
+.newPopupAuthor {
+    display: inline-block;
+    font-size: 15px;
+}
+.newPopupRepo {
+    margin: 5px 10px;
+    font-style: italic;
+}
+
+.deletePopup {
+    display: inline-block;
+    height: inherit;
+}
+
+.deletePopup:hover {
+    color: green;
+    cursor: default;
+}
+
+#popupContainer {
+    position: fixed;
+    bottom: 0px;
+    right: 100px;
+}
+/* end of popup style */
+
+/* INDEX */
+.indexHeaderWrapper {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../images/index_pic.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    overflow: hidden;
+    
+}
+#uspWrapper {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 600px;
+    transition: left 0.5s
+}
+.headerContainer {
+    margin-bottom: 40px;
+}
+.indexHeader {
+    height: 100px;
+    font-weight: 500;
+    font-size: 100px;
+    font-family: 'Titillium Web', sans-serif;  
+}
+.indexContent {
+    display: inline-block;
+    width: 500px;
+    font-size: 28px;
+}
+
+#showCreateAccount {
+    margin-top: 50px;
+    padding: 10px 0 10px 0;
+    width: 300px;
+    height: auto;
+    font-size: 20px;
+    border-radius: 3px;
+}
+/* end of INDEX */
+
+/* Form style */
+
+#formWrapper {
+    display: inline-block;
+    position: relative;
+    top: 100px;
+    right: -100%;
+    width: 500px;
+    height: 800px;
+    transition: right 0.5s
+}
+
+#formWrapper input {
+    box-sizing: border-box;
+    display: block;
+    width: 90%;
+    height: 40px;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+#formWrapper label {
+    display: block;
+    color: #E1E1E1;
+    font-size: 22px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin: 10px 0;
+}
+
+#createAccountBtn {
+    border: none;
+    margin-top: 30px;
+}
+
+/* end create acc formstyle */
+
+/* Login page */
+
+.loginWrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 200px;
+    height: 100vh;
+}
+
+
+.loginSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 350px;
+    border-radius: 3px;
+}
+
+.loginHeader {
+    height: 50%;
+    width: 50%;
+    padding-left: 20px;
+}
+.loginHeader h1 {
+   margin-bottom: 30px;
+}
+
+.loginSection form {
+    box-sizing: border-box;
+    width: 50%;
+    padding-right: 20px;
+}
+.loginSection input, label {
+    display: block;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0; 
+}
+
+
+.loginSection input {
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding-left: 10px;
+}
+
+.loginSection label {
+    font-size: 28px;
+}
+
+#gitLabSignin {
+    background-color: rgb(65, 158, 2);
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 100px;
+    font-size: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.errorWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 70px;
+}
+
+.errorWrapper .info {
+    width: 80%;
+}

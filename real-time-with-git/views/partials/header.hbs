@@ -1,0 +1,16 @@
+<header class="navWrapper bg-segment text-offWhite text-slim">
+    <ul class="header">
+        <li><a class="text-offWhite text-slim aTag" href="/">HOME</a></li>
+        {{#if logged_in}}
+        <li><a class="text-offWhite text-slim aTag" href="/profile">PROFILE</a></li>
+    </ul>
+        <div>
+        <a href="/login/logout" class="loginBtn actionBtn text-offWhite text-fat" >Sign out</a>
+    </div>
+    {{else}}
+        </ul>
+    <div>
+        <a href="/login" class="loginBtn actionBtn bg-hardGreen text-offWhite text-fat" >Sign in</a>
+    </div>
+    {{/if}}
+</header>

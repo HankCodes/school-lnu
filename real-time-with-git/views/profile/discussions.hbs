@@ -1,0 +1,70 @@
+    <div class="masterWrapper">
+            {{>sidebar}}
+        <div class="issuesWrapperMain bg-background">
+            <div class="issuesWrapper">
+                <div id="newComments"></div>
+                <div id="newIssuesContainer"></div>
+                {{#if viewData}}
+            {{#each viewData.issues}}
+            <div class="issueCardWrapper bg-segment">
+                <div class="content text-offWhite">
+                    <h3 class="header text-fat">{{title}}</h3>
+                    <p class="text-slim">Created by: {{author.username}}</p>
+                    <p class="text-slim">Last updated: {{updated_at}}</p>
+                    <p class="text-slim">State: {{state}}</p>
+                </div>
+                <div class="btnWrapper">
+                    <a class="btn bg-focus text-slim text-offWhite" href="/profile/{{project_id}}/issues/{{iid}}/comments">View issues</a>
+                </div>
+            </div>
+            {{/each}}
+            {{else}}
+            <div class="noIssues">Thers is no issues for this repository</div>
+            {{/if}}
+            </div>
+            <div class="issueView">
+                <div class="discussionHeader bg-focus text-offWhite greenBottomLine">
+                    <p class="text-fat issueName">{{viewData.request_issue.title}}</p>
+                    <a href="#" class="closeIssue text-slim text-offWhite">Close issue</a>
+                </div>
+                <div class="bg-segment issueDescription"><p class="text-offWhite text-slim">{{viewData.request_issue.description}}</p></div>
+                <div class="discussionContainer">
+                {{#each viewData.comments}}
+                <div class="encapsulateDiscussion bg-segment">
+ 
+                    {{#each notes}}
+                    <div class="discussionCardWrapper bg-segment">
+                        {{#if_equal @index 0}}
+                        <div class="discussionCardHeader bg-focus greenBottomLine">
+                            {{else}}
+                            <div class="discussionCardHeader bg-focus">
+                                {{/if_equal}}
+                            <h3 class="text-fat text-offWhite">{{author.name}}</h3>
+                            <p class="text-slim text-offWhite">@{{author.username}}</p>
+                        </div>
+                        <div class="discussionCardContent">
+                            <p class="text-slim text-offWhite">{{body}}</p>
+                            
+                            {{#if_equal @index 0 }}
+                            <div class="deleteReplyWrapper">
+                            <a href="" id="a{{../../comment_id}}" class="text-slim text-offWhite commentReply">Reply</a>
+                            <a href="" id="a{{../../comment_id}}1" class="text-slim text-offWhite commentDelete">Delete</a>                   
+                            </div>
+                            {{/if_equal}}
+                        </div>
+                    </div>
+                    {{/each}}
+                 </div>
+                {{/each}}
+                </div>
+                    <form id="sendForm" class="commentWrapper bg-segment" method="post" action="/profile/{{viewData.project_id}}/issues/{{viewData.issue_id}}/send">
+                        <input type="hidden" name="reply" id="comment{{@index}}"/>
+                        <textarea name="comment" id="commentIssue" placeholder="Write a comment" class="bg-segment text-offWhite"></textarea>
+                        <div class="bottomComment">
+                            <p id="replyContainer" class="text-slim text-softGreen"></p>
+                            <input class="actionBtn bg-softGreen text-fat text-offWhite" type="submit" id="sendComment" value="Send"/>                 
+                        </div>
+                    </form>
+            </div>
+        </div>
+    </div>
