@@ -1,0 +1,19 @@
+
+<div class="viewWrapper">        
+    <div class="viewHeader">
+        <h2>{{viewData.snippet.name}}</h2>
+    </div>
+    <div>
+        <pre class="language-{{viewData.snippet.tag}}"><code class="line-numbers">{{viewData.snippet.text}}</code></pre>
+    </div>
+    <div class="viewDescriptionWrapper">
+        <h3>Description</h3>
+        <p class="viewDescription">{{viewData.snippet.description}}</p>
+        <p class="viewAuthor"> Created by: {{viewData.snippet.username}} </p>
+        <p class="viewAuthor">{{viewData.snippet.createdAt}}</p>
+    {{#if viewData.snippet.lastModified}} <p class="viewAuthor italic">Last modified: {{viewData.snippet.lastModified}}</p> {{/if}}
+    </div>
+    {{#if viewData.owner}}
+    <a class="btnMainStyle" href="/snippets/{{viewData.snippet._id}}/edit">Edit</a>
+    {{/if}}
+</div>    

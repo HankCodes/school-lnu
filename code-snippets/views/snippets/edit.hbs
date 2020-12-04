@@ -1,0 +1,36 @@
+        <form action="/snippets/{{viewData.snippet._id}}/edit" method="POST">
+            <h1>Edit your snippet</h1>
+            <input type="hidden" name="id" value="{{viewData.snippet._id}}" />
+            <input type="hidden" name="favs" value="{{viewData.snippet.favs}}" />
+            <label for="snippetName">Change name</label>
+            <input type="text" id="snippetName" name="snippetName" required="true" value="{{viewData.snippet.name}}" autofocus="true">
+            
+            <label for="snippet">Edit your snippet</label>
+            <textarea class="prism-live language-html" wrap="off" name="snippet" id="snippet" cols="180" rows="20" minlength="3" required="true" >{{viewData.snippet.text}}</textarea>
+
+            <label for="snippetDescription">Change description</label>
+            <textarea name="snippetDescription" id="snippetDescription" cols="50" rows="10" >{{viewData.snippet.description}}</textarea>
+
+            <div class="tagWrapper">
+                <input type="radio" name="lang" id="htmlTag" class="tagCard" value="html">
+                <label for="htmlTag" id="htmlLabel" class="tagCardLabel" >.html</label>
+               
+                <input type="radio" name="lang" id="cssTag" class="tagCard" value="css">
+                <label for="cssTag" id="cssLabel" class="tagCardLabel">.css</label>
+                                
+                <input type="radio" name="lang" id="javascriptTag" class="tagCard" value="javascript">
+                <label for="javascriptTag" class="tagCardLabel" id="javascriptLabel">.js</label>
+                                
+                <input type="radio" name="lang" id="javaTag" class="tagCard" value="java">
+                <label for="javaTag" class="tagCardLabel" id="javaLabel">.java</label>
+                               
+                <input type="radio" name="lang" id="phpTag" class="tagCard" value="php">
+                <label for="phpTag" class="tagCardLabel" id="phpLabel">.php</label>
+
+                <input type="radio" name="lang" id="txtTag" class="tagCard" value="txt">
+                <label for="txtTag" class="tagCardLabel" id="txtLabel">.txt</label>
+                
+            </div>
+
+            <input type="submit" value="Save changes" class="formBtn"/>
+        </form>

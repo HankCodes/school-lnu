@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+::-webkit-input-placeholder { 
+    font-style: italic;
+    padding-left: 5px;
+  }
+
+a {
+    text-decoration: none;
+}
+/* Header main style */
+header, footer {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    box-shadow: 0px 5px 18px #0000001f;
+}
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 30px;
+}
+
+.navigationMenu, .navigationLogin {
+    display: inline-block;
+}
+
+nav ul li a {
+    color: rgb(92, 91, 91);
+    font-family: 'Nunito Sans', sans-serif;
+}
+nav ul li a:hover {
+    text-decoration-line: underline;
+    text-decoration-color: rgb(92, 91, 91);
+}
+
+#createAccount, .redBtn {
+    color: white;
+    background-color: rgb(209, 50, 50);
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 700;
+    
+}
+
+#createAccount:hover {
+    text-decoration: none;
+    background-color: rgb(250, 43, 43);
+    transition: background-color 0.2s ease-in-out;
+}
+/* End of header main style */
+
+
+/* Flash messages */
+.flash {
+    max-width: 80%;
+    text-align: center;
+    margin: 10px auto;
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+
+.warning {
+    background-color: rgb(255, 107, 107);
+    color: rgb(92, 8, 8)
+}
+
+.success {
+    background-color: rgb(130, 200, 130);
+    color: rgb(18, 85, 18);
+}
+/* End of flash messages */
+
+
+/* Popup style */
+.popupContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popupContainer > div {
+    width: 400px;
+    height: 200px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.popupContainer > div > h2 {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.buttonContainer {
+    text-align: center;
+}
+
+form {
+    display: inline-block;
+}
+
+.btnMainStyle {
+    border-style: none;
+    display: inline-block;
+    color: white;
+    background-color: rgb(209, 50, 50);
+    padding: 7px 12px;
+    border-radius: 5px;
+    font-weight: 700;
+}
+
+.formBtn:hover, .btnMainStyle:hover {
+    background-color: rgb(218, 60, 60);
+    transition: background-color 0.1s ease-in-out;
+}
+.formBtn:active, .btnMainStyle:active {
+    background-color: rgb(150, 44, 44);
+    transition: background-color 0.1s ease-in-out;
+}
+
+.editPage {
+    padding: 8px;
+    margin-left: 50px;
+}
+/* End of popup style */
+
+/* Log in style */
+.loginWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+
+
+/* End of log in style */
+/* Style for create account page */
+/* form style */
+.snippetEditable:focus {
+    outline: 0;
+}
+
+input[type="button"], input[type="text"], .inputField {
+    display: block;
+    width: 250px;
+    height: 30px;
+    border: 2px solid rgba(196, 195, 195, 0.301);
+    border-radius: 5px;
+    color: rgb(119, 117, 117);
+}
+
+
+label {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.formBtn {
+    border: none;
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    background-color: rgb(209, 50, 50);
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+
+.tagWrapper {
+    margin: 20px 0;
+    display: flex;
+    width: 500px;
+}
+.tagCard {
+    display: block;
+    visibility: hidden;
+}
+.tagCardLabel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    height: 40px;
+    width: 80px;
+    box-shadow: 0px 5px 18px #00000023;
+    border-left: 5px solid rgb(119, 119, 119);
+    background-color:rgb(240, 240, 240);
+
+}
+.tagCardLabel:hover {
+    cursor: pointer;
+    background-color:rgb(226, 226, 226);
+}
+
+
+#htmlLabel {
+    border-left: 5px solid rgb(78, 167, 251);
+    background-color:rgb(223, 240, 255);
+}
+
+#htmlLabel:hover {
+    cursor: pointer;
+    background-color:rgb(192, 226, 255);
+}
+
+.tagCard:active + .tagCardLabel {
+    background-color: 3px solid grey;
+}
+
+#cssLabel {
+    border-left: 5px solid rgb(78, 251, 170);
+    background-color:rgb(223, 255, 234);
+}
+
+#cssLabel:hover {
+    cursor: pointer;
+    background-color:rgb(192, 255, 224);
+}
+
+#javascriptLabel {
+    border-left: 5px solid rgb(251, 248, 78);
+    background-color:rgb(254, 255, 223);
+}
+
+#javascriptLabel:hover {
+    cursor: pointer;
+    background-color:rgb(255, 254, 192);
+}
+
+#javaLabel {
+    border-left: 5px solid rgb(251, 92, 78);
+    background-color:rgb(255, 223, 223);
+}
+
+#javaLabel:hover {
+    cursor: pointer;
+    background-color:rgb(255, 192, 192);
+}
+
+#phpLabel {
+    border-left: 5px solid rgb(251, 176, 78);
+    background-color:rgb(255, 240, 223);
+}
+
+#phpLabel:hover {
+    cursor: pointer;
+    background-color:rgb(255, 231, 192);
+}
+/* end of form style */
+#createAccountSection {
+    display: flex;
+    /* background-color: rgb(245, 245, 245); */
+    /* background-color: rgb(206, 79, 79); */
+}
+.createAccountHeader > h1 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+label, input[type='text'] {
+    display: block;
+    margin: 5px 0;
+}
+
+.leftView, .rightView {
+    width: 50%;
+}
+
+.leftView {
+    overflow: hidden;
+}
+
+.rightView {
+    display: flex;
+    /* align-items: center; */
+    margin-left: 50px;
+}
+.createAccountContainter {
+    height: 400px;
+    margin-top: 50px;
+    padding: 50px 100px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 5px 18px #0000001f;
+}
+
+.createAccountInfoText {
+    color: white;
+    position: relative;
+    top: 30%;
+    left: 5%;
+    text-shadow: 5px 5px 10px #000000b2
+}
+
+
+#createAccountImg {
+    max-height: 100%;
+}
+
+/* news page style */
+.mainWrapper {
+    display: flex;
+    justify-content: center;
+}
+.newsHeader {
+    margin: 50px;
+    text-align: center;
+    color: rgb(92, 92, 92);
+}
+
+.newsHeader > h2 {
+    font-family: serif;
+    font-size: 40px;
+    font-style: italic;
+}
+
+.newsHeader > p {
+margin-top: 20px;
+}
+
+.content {
+margin: 50px 0;
+}
+.newsInfo {
+    width: 80%;
+    margin-bottom: 40px;
+    font-style: italic;
+    line-height: 1.4;
+}
+.newsInfo > p {
+    font-style: italic;
+    font-size: 12px;
+    float: right;
+    color: rgb(168, 168, 168);
+}
+
+.newsInfo > h3 {
+    font-weight: 300;
+}
+.newsFeedWrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newsCard {
+    width: 300px;
+}
+.newsCard > h3 {
+    margin: 25px 5px;
+}
+
+.newsCard > p {
+    width: 90%;
+    text-align: justify;
+}
+/* end of newspage style */
+
+/* Footer main style */
+footer div{
+    margin: 0 auto;
+}

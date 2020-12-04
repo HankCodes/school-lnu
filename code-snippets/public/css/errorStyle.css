@@ -1,0 +1,21 @@
+#main {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.display {
+    font-size: 90px;
+    font-weight: 800;
+    color: rgb(93, 93, 93);
+    font-family: 'Nunito Sans', sans-serif;
+    line-height: 1;
+}
+
+.info {
+    text-align: center;
+    color: rgb(129, 129, 129);
+}
+
+.info h3{
+margin: 15px
+}

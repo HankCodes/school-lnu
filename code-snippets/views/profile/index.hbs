@@ -1,0 +1,20 @@
+
+        <h2 class="snippetsHeader">My Snippets</h2>
+        {{#each viewData.snippets}}
+        <div class="item" id="{{this._id}}">
+            <div class="{{this.tag}}Tag" ></div>
+            <div class="itemName">
+               <h2 class="displayName">{{this.name}}</h2> {{#if this.lastModified}}<p class="lastModified">Last modified: {{this.lastModified}}</p>{{/if}}
+                </div>
+            <div class="actionBtns">
+                <div class="itemFav">
+                    <a class="icon" href="/profile"></a>
+                </div>
+                <div class="itemEdit">
+                    <a class="icon" href="/snippets/{{this._id}}/edit"></a>
+                </div>
+                <div class="itemDelete icon delete">
+                </div>
+            </div>
+        </div>
+        {{/each}}

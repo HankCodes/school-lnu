@@ -1,0 +1,28 @@
+<section class="searchSection">
+    <form action="/snippets/search/field" method="get" id="search">
+        <input type="text" placeholder="Search"  name="q" id="searchField" maxlength="150"/>
+        <input type="submit" value="Go!" id="searchBtn"/>
+    </form>
+</section>
+
+<section class="snippetCollection">
+        {{#each viewData.snippets}}
+        <div class="snippetCard">
+            <div class="tagWrapper"><div class="{{this.tag}}Tag"></div></div>
+            <div class="snippetText">
+                <pre><code class="language-{{this.tag}} line-numbers">{{this.text}}</code></pre>
+            </div>
+            
+            <div class="snippetDescription">
+                <h2 class="headerClass">{{this.name}}</h2>
+                <p class="snippetDescription">{{this.description}}</p>
+                <p class="snippetAuthor">Created by: {{this.username}}</p>
+                <p class="date">{{this.createdAt}}</p>
+            </div>
+
+            <div class="viewMore">
+                <a href="snippets/{{this._id}}">View more</a>
+            </div>
+        </div>
+        {{/each}}
+</section>

@@ -1,0 +1,24 @@
+<header>
+    <div class="navigationMenu">
+        <nav class="navMenu">
+            <ul>
+                <li><a href="/news">News</a></li>
+                <li><a href="/snippets">Snippets</a></li>
+                <li><a href="/snippets/new">Create</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="navigationLogin">
+        <nav class="loginNav">
+            <ul>
+                {{#if loggedIn}}
+                <li><a href="/profile">Profile</a></li>
+                <li><a id="logOut" href="">Sign out</a></li>
+                {{else}}
+                <li><a href="/login">Sign in</a></li>
+                <li><a id="createAccount" href="/">Create account</a></li>
+                {{/if}}
+            </ul>
+        </nav>
+    </div>
+</header>
