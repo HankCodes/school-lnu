@@ -1,0 +1,10 @@
+{
+    "app_name": "your_app_name",
+    "error_log": "path/to/errors.txt",
+    "db_name_env": "env_name_for_database_name",
+    "db_password_env": "envname_for_database_password",
+    "db_username_env": "envname_for_database_username",
+    "db_host_env": "env_name_for_database_host",
+    "db_port_env": "env_name_for_database_port",
+    "terminate_on_db_error": true
+}
