@@ -1,0 +1,11 @@
+.Footer {
+    position: fixed;
+    bottom: 0;
+    min-width: var(--content-size-min); 
+    max-width: var(--content-size-max);
+}
+
+.Footer__quick-menu-wrapper {
+    display: flex;
+    justify-content: center;
+}

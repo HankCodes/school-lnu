@@ -1,0 +1,10 @@
+.IndexHero {
+    color: var(--font-color-white);
+    border-top: var(--border-transparent-small);
+    border-bottom: var(--border-transparent-small);
+    padding: 50px;
+}
+
+.IndexHero__headline {
+    color: var(--color-green)
+}

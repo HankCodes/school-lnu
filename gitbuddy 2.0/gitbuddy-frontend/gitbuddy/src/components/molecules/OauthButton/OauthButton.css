@@ -1,0 +1,20 @@
+.OauthButton {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--border-radius-fixed);
+    /* box-shadow: var(--shadow-standard); */
+}
+
+.OauthButton:hover, .OauthButton button:hover {
+    cursor: pointer;
+}
+
+.OauthButton button {
+    width: 100px;
+    border-style: none;
+    background-color: transparent;
+}
+

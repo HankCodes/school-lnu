@@ -1,0 +1,12 @@
+{
+    "statusCode": 200,
+    "service": "Gitlab Oauth2",
+    "payload": {
+      "access_token": "6d26441565936d61b1b43a28e71c7199ff504077d38a6a8dad9b5f5777a94fce",
+      "token_type": "Bearer",
+      "refresh_token": "d3307be40493249f63acc139db6d88c09b5b170324ab985e112264fb974f03b8",
+      "scope": "api read_user read_repository write_repository",
+      "created_at": 1584365218
+    },
+    "error": null
+  }

@@ -1,0 +1,14 @@
+.DashboardHeader {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 10px;
+    height: var(--header-height);
+    background-color: var(--color-blue-deep);
+}
+
+.DashboardHeader__button {
+    width: 100px;
+    height: 40px;
+}

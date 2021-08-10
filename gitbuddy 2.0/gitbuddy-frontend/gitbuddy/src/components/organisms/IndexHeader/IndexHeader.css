@@ -1,0 +1,11 @@
+.IndexHeader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 10px
+}
+
+.IndexHeader .IndexHeader__login {
+    width: 100px;
+}

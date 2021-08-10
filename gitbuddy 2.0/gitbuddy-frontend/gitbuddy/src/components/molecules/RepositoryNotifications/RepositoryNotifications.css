@@ -1,0 +1,46 @@
+.RepositoryNotifications__checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: var(--border-transparent-small);
+}
+
+.RepositoryNotifications__checkbox-wrapper p {
+    font-weight: 800;
+    flex-grow: 1; 
+}
+
+.checkbox-slider-track {
+    width: 50px;
+    height: 20px;
+    background: #5555551f;
+    position: relative;
+    border-radius: 10px;
+    margin-left: 15px;
+    border: 01px solid #b37584;
+}
+
+.checkbox-slider-knob {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+
+    transition: all .5s ease;
+    cursor: pointer;
+    position: absolute;
+    top: -1px;
+    left: 0;
+
+    background: #ccc;
+}
+
+.RepositoryNotification__checkbox {
+    visibility: hidden;
+}
+
+.RepositoryNotifications__checkbox-wrapper input[type=checkbox]:checked + label {
+    left: 30px;
+    background-color: var(--color-accent);
+}

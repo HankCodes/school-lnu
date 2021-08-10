@@ -1,0 +1,196 @@
+
+========= Sun Apr 25 2021 21:14:59 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: accountController.login: Loggin user in 
+============== END ==============
+
+========= Sun Apr 25 2021 21:14:59 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:23 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: github
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:24 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: bitbucket
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:25 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: github
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:26 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: gitlab
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:29 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accesscontroller.verify]: Calling Auth API to verify token for gitlab
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:34 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:37 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/7769/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:39 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:41 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/4986/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:43 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/projects/3329
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:43 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:43 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [validateToken]: Calling Auth API to verify token for gitlab
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:44 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET for webhook data for: /gitlab/project/3329/hook
+============== END ==============
+
+========= Sun Apr 25 2021 21:15:51 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/4986/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:08 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:10 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/7769/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:24 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/7769/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:24 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accesscontroller.verify]: Calling Auth API to verify token for gitlab
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:25 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/7769/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:34 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Middleware to check session
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:34 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Requesting VAPID key
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:37 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Middleware to check session
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:37 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: registering a subscription request
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:40 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:40 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accountController.getNotifications]: recieving a request for a users notifications
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:44 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:44 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accountController.readNotifications]: Registering read nnotifications
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:46 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:16:46 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accountController.getNotifications]: recieving a request for a users notifications
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:09 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:09 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accountController.readNotifications]: Registering read nnotifications
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:11 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:14 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/groups/7769/projects
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:16 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET forwarded to: /gitlab/projects/12793
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:17 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:17 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: GET for webhook data for: /gitlab/project/12793/hook
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:21 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:21 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: POST for webhook data for: /gitlab/project/12793/hook?web-url=https://gitlab.lnu.se/1dv612/student/hh222kt/maintainer/webhook-project
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:24 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasSessionAndToken]: Checks token
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:24 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: PUT for webhook data for: /gitlab/project/12793/hook/1509?issues_events=true&push_events=true&merge_requests_events=false&releases_events=false&note_events=false
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:39 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasAppSecret]: Check secret
+============== END ==============
+
+========= Sun Apr 25 2021 21:17:40 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Sending notification to user
+============== END ==============
+
+========= Sun Apr 25 2021 21:39:00 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: github
+============== END ==============
+
+========= Sun Apr 25 2021 21:39:04 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [accesscontroller.verify]: Calling Auth API to verify token for gitlab
+============== END ==============
+
+========= Sun Apr 25 2021 21:39:06 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Proxying Login request to auth API for service: github
+============== END ==============
+
+========= Sun Apr 25 2021 21:39:50 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: [hasAppSecret]: Check secret
+============== END ==============
+
+========= Sun Apr 25 2021 21:39:51 GMT+0200 (centraleuropeisk sommartid) =========
+        [Server]: Sending notification to user
+============== END ==============

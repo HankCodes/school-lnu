@@ -1,0 +1,49 @@
+.Popup {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    animation-name: fadein;
+    animation-duration: .3s;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+@keyframes fadein {
+    from {
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+    to {
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+}
+
+.Popup__window {
+    padding: var(--padding-large);
+    min-width: 300px;
+    min-height: 150px;
+    border-radius: var(--border-radius-fixed);
+}
+
+.Popup__window--top-bar {
+    height: 20px;
+    display: flex;
+    justify-content: flex-end;
+    
+    color: var(--font-color-faded)
+}
+
+.Popup__window--top-bar--close:hover {
+    color: var(--font-color-white);
+    cursor: pointer;
+}
+
+.Popup__window--content {
+    width: 100%;
+    min-height: 130px; 
+}

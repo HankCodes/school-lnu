@@ -1,0 +1,24 @@
+.Repositories {
+    margin: 20px auto;
+    min-width: 300px;
+    max-width: 500px;
+    width: 90%;
+}
+
+.Repositories__list {
+    margin: 20px 0;
+}
+
+.Repositories__list li {
+    padding: 10px;
+    border-top: var(--border-transparent-small);
+}
+
+.Repositories__list li:hover {
+    cursor: pointer;
+    background-color: #0000004a;
+}
+
+.Repositories__goback-wrapper {
+    margin: 20px 0;
+}

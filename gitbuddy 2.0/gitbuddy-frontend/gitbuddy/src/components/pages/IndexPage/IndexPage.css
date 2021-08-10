@@ -1,0 +1,75 @@
+.IndexPage {
+    width: 100vW;
+    height: 100vh;
+    background-image: url('../../../images/pexels-bruno-thethe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.IndexPage__header {
+    width: 100%;
+}
+
+.IndexPage__content-wrapper {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+
+.IndexPage__content-wrapper--right,
+.IndexPage__content-wrapper--left {
+    min-width: 300px;
+    min-height: 300px;
+    border-radius: var(--border-radius-fixed);
+    padding: var(--padding-large);
+}
+
+.IndexPage__content-wrapper--right {
+    animation: fadeUp 2s;
+}    
+
+
+.IndexPage__content-wrapper--left {
+    animation: fadeIn 2s;
+}    
+
+@media screen and (max-width: 480px) {
+    .IndexPage__content-wrapper {
+        flex-direction: column;
+        margin: 10px;
+    }
+}
+
+@keyframes fadeUp {
+    0% {
+        position: relative;
+        opacity: 0;
+        top: 50px;
+    }
+    
+    30% {
+        position: relative;
+        opacity: 0;
+        top: 50px;
+    }
+    
+    100% {
+        opacity: 1;
+        position: relative;
+        top: 0px;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        top: 50px;
+    }
+    
+    
+    100% {
+        opacity: 1;
+    }
+}

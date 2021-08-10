@@ -1,0 +1,13 @@
+.Oauth {
+    margin: var(--margin-medium);
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.Oauth__description {
+    margin-top: 10px;
+    height: 70px;
+}

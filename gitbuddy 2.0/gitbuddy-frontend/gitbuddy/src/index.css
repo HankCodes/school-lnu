@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  color: var(--font-color-white)
+}
+
+:root {
+  /* Sized */
+  --content-size-max: 700px;
+  --content-size-min: 360px;
+  --header-height: 50px;
+  --footer-height: 150px;
+  --media-breakpoint-sm: 380px;
+  --media-breakpoint-md: 540px;
+  --media-breakpoint-lg: 768px;
+  /* Colors */
+  --color-accent: #0033ad; 
+  --color-green: #0bad00;
+  --color-blue-faded:#000e31e1; 
+  --color-blue-deep:#0d0e12; 
+
+  --font-color-white: rgba(255, 255, 255, 0.774);
+  --font-color-faded: rgba(255, 255, 255, 0.5);
+  --font-color-danger: rgb(185, 3, 3);
+
+  /* Padding and margins */
+  --padding-standard: 10px;
+  --padding-large: 20px;
+
+  --margin-small: 5px;
+  --margin-medium: 10px;
+
+    /* Borders */
+  --border-radius-fixed: 30px; 
+  --border-transparent-small: 1px solid var(--font-color-white); 
+  --border-transparent-medium: 2px solid var(--font-color-white); 
+  
+  /* Shadows */
+  --shadow-standard: 3px 5px 10px 0px #00000056;
+
+  /* backgrounds */
+  --transparent-background-light: rgba(255, 255, 255, 0.1);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+label {
+  display: block;
+  color: var(--font-color-white);
+}
+
+input[type='text'],
+input[type='password'] {
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  border-bottom:var(--border-transparent-small);
+  color: #ffffff94;
+  margin-bottom: var(--margin-medium);
+}
+
+input[type='text']::placeholder {
+  color: var(--font-color-faded);
+}
+
+input[type="button"],
+input[type="submit"] {
+ border: none;
+ background-color: var(--color-accent);
+ color: var(--font-color-white);
+ padding: var(--padding-standard);
+ font-weight: 600;
+}
+
+input[type="button"],
+input[type="submit"]:hover {
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--font-color-white);
+}
+
+.global-glass {
+  backdrop-filter: blur(10px); 
+  background: linear-gradient(324deg, rgba(121, 121, 121, 0.16) 10%, rgb(255 255 255 / 27%) 100%);
+  border: solid 1px rgba(255, 255, 255, 0.24);
+  background-clip: padding-box;
+  box-shadow: var(--shadow-standard);
+}
+
+.global-font-danger {
+  color: var(--font-color-danger);
+  font-weight: 600;
+  margin: var(--margin-medium) 0;
+}
+
+.global-grayscale {
+  filter: grayscale(1);
+}

@@ -1,0 +1,20 @@
+.Organizations {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Organizations__list {
+    margin: 20px;
+}
+
+.Organizations__list li {
+    padding: 10px;
+    border-top: var(--border-transparent-small);
+}
+
+.Organizations__list li:hover {
+    cursor: pointer;
+    background-color: #0000004a;
+}

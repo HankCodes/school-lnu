@@ -1,0 +1,60 @@
+.QuickMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+}
+
+.QuickMenu__logo {
+    box-shadow: -2px -7px 20px 3px #00000078;;
+    position: absolute;
+    bottom: 0;
+
+    width: 100px;
+    height: 100px;
+
+    background-color: var(--color-blue-faded);
+    border-radius: 50%;
+    padding: 15px;
+    z-index: 10;
+}
+
+.QuickMenu__board {
+    display: flex;
+    justify-content: space-around;
+    padding: 25px;
+    position: relative;
+    transition: all .3s ease-out;
+    border-radius: 200%;
+}
+
+.QuickMenu__board--bell {
+   width: 50px; 
+   height: 50px; 
+}
+
+.QuickMenu__board--wheel {
+   width: 50px; 
+   height: 50px; 
+}
+
+.hide-board {
+    height: 0px;
+    width: 0px;
+    bottom: -50px;
+}
+
+.show-board {
+    height: 250px;
+    width: 250px;
+    bottom: -75px;
+}
+
+.hide-icons {
+    opacity: 0;
+}
+
+.show-icons {
+    opacity: 1;
+}

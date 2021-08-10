@@ -1,0 +1,27 @@
+
+.DashboardPage {
+    width: 100vW;
+    height: calc(100vh + var(--footer-height));
+    background-image: url('../../../images/pexels-bruno-thethe.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.DashboardPage__header {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: var(--header-height);
+}
+
+
+
+.DashboardPage__content {
+    min-height: 100%;
+    width: 100%;
+    min-width: var(--content-size-min); 
+    max-width: var(--content-size-max);
+}
