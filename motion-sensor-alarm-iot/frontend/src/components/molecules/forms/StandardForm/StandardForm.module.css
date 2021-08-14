@@ -1,0 +1,21 @@
+.field_wrapper {
+
+}
+
+.label {
+    display: block;
+}
+
+.input_field {
+    margin: 5px auto;
+    display: block;
+    height: 30px;
+    width: 80%;
+}
+
+.error_message {
+    color: rgb(211, 33, 33);
+    font-weight: 600;
+
+}
+

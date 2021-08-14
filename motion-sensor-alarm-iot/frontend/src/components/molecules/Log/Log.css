@@ -1,0 +1,22 @@
+.Log {
+    padding: var(--padding-standard);
+}
+
+.Log__headline {
+    margin-bottom: 5px;
+}
+
+.activated {
+    border: 1px solid #2bc038;
+    background-color: #eeffed;
+}
+
+.deactivated {
+    border: 1px solid #ffc800;
+    background-color: #ffffc4;
+}
+
+.triggered {
+    border: 1px solid #fc3030;
+    background-color: #ffcaca;
+}

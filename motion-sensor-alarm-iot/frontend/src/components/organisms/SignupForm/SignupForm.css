@@ -1,0 +1,13 @@
+.SignupForm {
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--padding-large);
+}
+
+.SignupForm__field > * {
+    width: 100%;
+}
+
+.SignupForm__button {
+    margin: 0 auto;
+}

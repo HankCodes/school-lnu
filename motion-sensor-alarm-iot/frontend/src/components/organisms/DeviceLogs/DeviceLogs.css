@@ -1,0 +1,10 @@
+.DeviceLogs {
+ width: 90%;
+ margin: 10px auto;
+ overflow:auto;
+ max-height: 500px;
+}
+
+.DeviceLogs .DeviceLogs__list-item {
+    border: none;
+}

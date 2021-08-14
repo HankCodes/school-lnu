@@ -1,0 +1,13 @@
+.LoginForm {
+    width: 90%;
+    margin: 0 auto;
+    padding: var(--padding-large);
+}
+
+.LoginForm__field > * {
+    width: 100%;
+}
+
+.LoginForm__submit {
+    margin-top: var(--margin-medium)
+}

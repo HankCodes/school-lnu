@@ -1,0 +1,66 @@
+{
+    "id": "md-1001-1",
+    "title": "Motion detector",
+    "description": "A simple motion detector.",
+    "properties": {
+        "on":{
+            "type": "boolean",
+            "title": "activated",
+            "description": "A boolean that tells if the sensor is on or not",
+            "readOnly": true, 
+            "forms": [{
+                "href": "/sensor/motion/properties/on",
+                "mediaType": "application/json"
+            }]
+        }
+    },
+    "actions": {
+        "activate":{
+            "title": "activate",
+            "description": "activate the sensor with code",
+            "forms": [{
+                "href": "/sensor/motion/actions/activate"
+            }]
+        },
+        "deactivate":{
+            "title": "deactivate",
+            "description": "deactivate the sensor with code",
+            "forms": [{
+                "href": "/sensor/motion/actions/deactivate"
+            }]
+        },
+        "setCode":{
+            "title": "set code",
+            "description": "set the code that will be used for making requests to the sensor",
+            "input": {
+                "type": "integer"
+            },
+            "forms": [{
+                "href": "/sensor/motion/actions/set-code",
+                "contentType": "application/josn"
+            }]
+        }
+    },
+    "events": {
+        "triggered": {
+            "type": "integer",
+            "description": "An integer value of 1 is sent when motion is detected",
+            "forms":[
+               {
+                    "href": "/sensor/motion/events/triggered",
+                    "mediaType": "application/json"
+               } 
+            ] 
+        },
+        "codeChanged": {
+            "type": "integer",
+            "description": "An integer value of 1 is sent when code is succesfuly changed, 0 if not",
+            "forms":[
+               {
+                    "href": "/sensor/motion/events/code-change",
+                    "mediaType": "application/json"
+               } 
+            ] 
+        }
+    }
+}

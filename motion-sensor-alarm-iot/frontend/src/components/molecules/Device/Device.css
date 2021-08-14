@@ -1,0 +1,8 @@
+.Device {
+    padding: var(--padding-standard) 5px;
+}
+
+.Device:hover {
+    cursor: pointer;
+    background-color: var(--color-offwhite);
+}

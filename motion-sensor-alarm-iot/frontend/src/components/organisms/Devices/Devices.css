@@ -1,0 +1,15 @@
+
+.Devices {
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+.Devices h2 {
+    margin: var(--margin-medium) auto;
+}
+
+.Devices li {
+    border-top: var(--border-small);
+    padding: var(--margin-medium) 0;
+}

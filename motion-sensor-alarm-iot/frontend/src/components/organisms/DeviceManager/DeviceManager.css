@@ -1,0 +1,14 @@
+.DeviceManager {
+    width: 340px;
+    min-height: 500px;
+}
+
+.DeviceManager__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.DeviceManager__buttons input {
+    width: 100px;
+}

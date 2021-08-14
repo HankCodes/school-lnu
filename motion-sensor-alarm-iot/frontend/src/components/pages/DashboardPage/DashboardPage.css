@@ -1,0 +1,27 @@
+.DashboardPage {
+    max-width: 700px;
+    min-height: 200px;
+    width: 90%;
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-standard);
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.DashboardPage__logout-wrapper p {
+    text-align: right;
+    margin: 10px;
+}
+
+.DashboardPage__header h1 {
+    margin: 10px 0;
+    text-align: center;
+}
+
+.DashboardPage__button-wrapper {
+    width: 95%;
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}

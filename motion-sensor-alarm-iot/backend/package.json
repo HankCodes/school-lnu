@@ -1,0 +1,31 @@
+{
+  "name": "wot",
+  "version": "1.0.0",
+  "description": "In this assignment you will create a small IoT-project where a \"thing\" will be connected to internet through web technologies.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "helmet": "^4.4.1",
+    "moment": "^2.29.1",
+    "mongoose": "^5.12.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "socket.io": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon --inspect app.js",
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.lnu.se:1dv527/student/hh222kt/wot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
