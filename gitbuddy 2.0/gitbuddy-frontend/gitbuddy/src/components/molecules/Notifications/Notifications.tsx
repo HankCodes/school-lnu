@@ -12,9 +12,8 @@ const Notifications: React.FC = () => {
     useEffect(() => {
         const get = async () => {
             const resp: any = await getNotifications('gitlab') 
-            console.log('respionse fron notifi', resp);
             
-            if (!resp.payload) return setError('Could not get your anotifications right now')
+            if (!resp.payload) return setError('Could not get your notifications right now')
             setUnread(resp.payload.unreadNotifications || [])
             setRead(resp.payload.readNotifications || [])
             setError('')
